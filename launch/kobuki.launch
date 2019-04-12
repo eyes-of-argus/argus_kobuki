@@ -1,0 +1,10 @@
+<!--
+This file launches the main kobuki connection node and
+the kobuki keyboard operation node that is used as the base
+controller for argus move and joystick commands.
+-->
+
+<launch>
+    <include file="$(find kobuki_node)/launch/minimal.launch" />
+    <include file="$(find kobuki_keyop)/launch/safe_keyop.launch" />
+</launch>
